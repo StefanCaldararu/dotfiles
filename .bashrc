@@ -43,7 +43,7 @@ esac
 # uncomment for a colored prompt, if the terminal has the capability; turned
 # off by default to not distract the user: the focus in a terminal window
 # should be on the output of commands, not on the prompt
-#force_color_prompt=yes
+force_color_prompt=yes
 
 if [ -n "$force_color_prompt" ]; then
 	if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
@@ -116,24 +116,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/stefan/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/stefan/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/stefan/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/stefan/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-
-if [ -n "$CONDA_DEFAULT_ENV" ]; then                                                                                                                                         
-    __conda_reactivate                                                                                                                                                       
-fi
-# conda list environments alias
 alias cls="conda info --envs"
 # <<< conda initialize <<<
 # tmux alias
@@ -145,14 +127,8 @@ if [ -f /etc/bash_completion.d/tma ]; then
 	. /etc/bash_completion.d/tma
 fi
 
-# export environment variables for permissions
-export USER_UID=1002
-export USER_GID=1002
 
 export CUDA_HOME=/usr/local/cuda
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64:/usr/local/cuda/extras/CUPTI/lib64
 export PATH=$PATH:$CUDA_HOME/bin
 
-export PYTHONPATH=$PYTHONPATH:/home/stefan/Documents/chrono/build/bin:/home/stefan/Documents/gym-chrono
-#export CHRONO_DATA_DIR=/home/stefan/Documents/gym-chrono/gym_chrono/envs/data/
-export CHRONO_DATA_DIR=/home/stefan/Documents/chrono/data/
