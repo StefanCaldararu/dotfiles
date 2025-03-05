@@ -5,7 +5,7 @@
         "command": "workbench.action.quickOpenWithModes"
     },
     {
-        "key": "ctrl+b ctrl+b",
+        "key": "ctrl+b b",
         "command": "workbench.action.toggleSidebarVisibility"
     },
     {
