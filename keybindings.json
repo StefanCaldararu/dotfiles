@@ -1,0 +1,55 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "ctrl+p",
+        "command": "workbench.action.quickOpenWithModes"
+    },
+    {
+        "key": "ctrl+b ctrl+b",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "ctrl+b h",
+        "command": "workbench.action.focusLeftGroup"
+    },
+    {
+        "key": "ctrl+b left",
+        "command": "workbench.action.focusLeftGroup"
+    },
+    {
+        "key": "ctrl+b l",
+        "command": "workbench.action.focusRightGroup"
+    },
+    {
+        "key": "ctrl+b right",
+        "command": "workbench.action.focusRightGroup"
+    },
+    {
+        "key": "ctrl+b k",
+        "command": "workbench.action.focusAboveGroup"
+    },
+    {
+        "key": "ctrl+b up",
+        "command": "workbench.action.focusAboveGroup"
+    },
+    {
+        "key": "ctrl+b j",
+        "command": "workbench.action.focusBelowGroup"
+    },
+    {
+        "key": "ctrl+b down",
+        "command": "workbench.action.focusbelowGroup"
+    },
+    {
+        "key": "ctrl+b shift+5",
+        "command": "workbench.action.splitEditorLeft"
+    },
+    {
+        "key": "ctrl+b shift+'",
+        "command": "worbench.action.splitEditorDown" 
+    },
+    {
+        "key": "ctrl+b c",
+        "command": "workbench.action.newWindow"
+    }
+]
