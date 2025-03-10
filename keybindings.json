@@ -51,5 +51,15 @@
     {
         "key": "ctrl+b c",
         "command": "workbench.action.newWindow"
+    },
+    {
+        "key": "ctrl+b shift+l",
+        "command": "workbench.action.nextEditor",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+b shift+h",
+        "command": "workbench.action.previousEditor",
+        "when": "editorTextFocus"
     }
 ]
